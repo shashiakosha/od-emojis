@@ -588,19 +588,27 @@ export var EmojisComponent = (function () {
     }
     EmojisComponent.prototype.ngOnInit = function () {
     };
-    EmojisComponent.prototype.openDialog = function (e) {
-        var _this = this;
-        e.stopPropagation();
-        this.isDialogOpen = true;
-        this.clickFn = function () {
-            _this.closeDialog();
-        };
-        document.addEventListener('click', this.clickFn);
+  EmojisComponent.prototype.openDialog = function(e) {
+    var _this = this;
+    e.stopPropagation();
+    var classAdd = _this.el.nativeElement.getElementsByClassName(
+      "eih-emojis-dialog"
+    );
+    classAdd[0].classList.add("eih-visible");
+    this.isDialogOpen = true;
+    this.clickFn = function() {
+      _this.closeDialog();
     };
-    EmojisComponent.prototype.closeDialog = function () {
-        this.isDialogOpen = false;
-        document.removeEventListener('click', this.clickFn);
-    };
+    document.addEventListener("click", this.clickFn);
+  };
+  EmojisComponent.prototype.closeDialog = function() {
+    this.isDialogOpen = false;
+    var removeClassName = this.el.nativeElement.getElementsByClassName(
+      "eih-emojis-dialog"
+    );
+    removeClassName[0].classList.remove("eih-visible");
+    document.removeEventListener("click", this.clickFn);
+  };
     EmojisComponent.prototype.emojiSelected = function (e, emoji) {
         e.stopPropagation();
         this.emojiAdded.emit(this.inputEl.emojiInputValue + String.fromCodePoint(parseInt('0' + emoji.replace(/&#/, '').replace(/;/, ''))));

@@ -590,7 +590,7 @@ export var EmojisComponent = (function () {
     };
   EmojisComponent.prototype.openDialog = function(e) {
     var _this = this;
-    e.stopPropagation();
+    e.stopPropagation(); 
     var classAdd = _this.el.nativeElement.getElementsByClassName(
       "eih-emojis-dialog"
     );

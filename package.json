@@ -1,0 +1,59 @@
+{
+  "_from": "od-emojis",
+  "_id": "od-emojis@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-owDp2glrwIKLnZhMMBSdzLNOOKg=",
+  "_location": "/od-emojis",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "od-emojis",
+    "name": "od-emojis",
+    "escapedName": "od-emojis",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/od-emojis/-/od-emojis-1.2.0.tgz",
+  "_shasum": "a300e9da096bc0828b9d984c30149dccb34e38a8",
+  "_spec": "od-emojis",
+  "_where": "/Users/chetnabhandari/Documents/onedirect-ui",
+  "author": {
+    "name": "od",
+    "email": "shashipriyamishra@gmail.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "emoji",
+  "homepage": "",
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular",
+    "unicode",
+    "emoticons",
+    "emojis"
+  ],
+  "license": "",
+  "main": "bundles/od-emojis.umd.min.js",
+  "module": "index.js",
+  "name": "od-emojis",
+  "peerDependencies": {
+    "@angular/core": "^2.4.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.1",
+    "zone.js": "^0.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "typings": "index.d.ts",
+  "version": "1.1.0"
+}
